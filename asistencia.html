@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asistencia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="bg-">
+  	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="index.html">Inicio</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+	      <div class="navbar-nav">
+	        <a class="nav-link active" aria-current="page" href="#">Asistencia</a>
+	        <a class="nav-link" href="calificaciones.html">Calificaciones</a>
+	        <a class="nav-link" href="about.html">About</a>
+	      </div>
+	    </div>
+	  </div>
+	</nav>
+  	<div class="container">
+  		<div class="row d-flex justify-content-center my-4">
+  			<div class="col-12 col-lg-6 col-xl-4">
+  					<select name="select_asignatura" id="select_asignatura" class="form-select col-12">
+  						<option value="00" selected>Elija una opción</option>
+  					</select>
+  			</div>
+  		</div>
+  		<div class="row d-flex justify-content-center my-4">
+  			<div class="col-12 col-lg-6 col-xl-4">
+  					<input type="date" class="form-control" id="txt_fecha">
+  			</div>
+  		</div>
+
+  		<div class="row d-flex justify-content-center my-2" id="div_msg_asistencia">
+  			
+  		</div>
+
+  		<div class="row d-flex justify-content-center my-4">
+  			<div class="col-12 col-lg-6 col-xl-4">
+  					<button class="btn btn-primary col-12" id="btn_asistencia">Enviar</button>
+  			</div>
+  		</div>
+  		<div class="row d-flex justify-content-center my-4 table-responsive">
+  			<div class="col-12 d-flex justify-content-center table-responsive">
+  				<table class="col-12 table" >
+  					<thead>
+  						<tr>
+  						<th class="text-center">#</th>
+  						<th class="text-center">Nombre</th>
+  						<!--th class="text-center">Correo</th-->
+  						<th class="text-center">Fecha</th>
+  						<th class="text-center">Hora</th>  						
+  						<th class="text-center">asistencia</th>
+  					</tr>
+  					</thead>
+  					
+  					<tbody id="table_asistencia">
+  						
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+  	</div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+	<script src="js/asistencia.js"></script>
+  </body>
+</html>
